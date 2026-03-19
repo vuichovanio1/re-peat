@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Peat Stores | Модерни Магазини за Облекла</title>
+    <meta name="description" content="Re-Peat Stores - Верига магазини за дрехи и аксесоари. 3 удобни локации в България, работно време 10-18">
+    <meta name="keywords" content="Re-Peat, магазини облекла, мода, дрехи, България">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://re-peat.bg">
+    <meta property="og:title" content="Re-Peat Stores | Модерни Магазини за Облекла">
+    <meta property="og:description" content="Откройте света на модерния стил! Re-Peat - верига магазини за дрехи и аксесоари с 3 локации в София. Маркови находки за всеки джоб с падащи цени!">
+    <meta property="og:image" content="https://re-peat.bg/wellcome.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:alt" content="Re-Peat Stores - Магазин за облекла и аксесоари">
+    <meta property="og:site_name" content="Re-Peat Stores">
+    <meta property="og:locale" content="bg_BG">
+    
+    <!-- Facebook Specific -->
+    <meta property="fb:app_id" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://re-peat.bg">
+    <meta property="twitter:title" content="Re-Peat Stores | Модерни Магазини за Облекла">
+    <meta property="twitter:description" content="Откройте света на модерния стил! Re-Peat - верига магазини за дрехи и аксесоари с 3 локации в София.">
+    <meta property="twitter:image" content="https://re-peat.bg/logo.webp">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#dc2626">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .gradient-hero {
+            background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.4) 100%);
+        }
+        .card-hover:hover { transform: translateY(-4px); }
+        .btn-primary {
+            background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #b91c1c 0%, #991b1b 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(220, 38, 38, 0.3);
+        }
+        .hero-pattern {
+            background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+            opacity: 0.2;
+        }
+        .cta-pattern {
+            background-image: radial-gradient(circle, white 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.1;
+        }
+        /* Scroll margin for sticky header clearance */
+        section[id] {
+            scroll-margin-top: 80px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="logo.webp" alt="Re-Peat Logo" class="h-12 w-auto shadow-lg" width="300" height="300">
+                    <span class="text-2xl font-bold text-red-600 tracking-tight">Re-Peat</span>
+                </div>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-gray-600 hover:text-red-600 transition-colors font-medium">За нас</a>
+                    <a href="#stores" class="text-gray-600 hover:text-red-600 transition-colors font-medium">Магазини</a>
+                    <a href="#products" class="text-gray-600 hover:text-red-600 transition-colors font-medium">Продукти</a>
+                    <a href="#contact" class="text-gray-600 hover:text-red-600 transition-colors font-medium">Контакти</a>
+                </div>
+                <a href="https://www.facebook.com/repeatstores" target="_blank" class="btn-primary text-white px-5 py-2.5 rounded-lg font-medium flex items-center gap-2 shadow-lg" title="Посетете нашата Facebook страница">
+                    <i data-lucide="facebook" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Последвайте ни</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="wellcome.webp" alt="Re-Peat Welcome" class="w-full h-full object-cover" width="1200" height="600">
+            <div class="absolute inset-0 bg-gradient-to-r from-gray-900/80 via-gray-800/80 to-gray-700/80"></div>
+            <div class="absolute inset-0 hero-pattern"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 shadow-lg">
+                    Втори живот за стил
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+                    Маркови находки<br>
+                    <span class="text-red-500">за всеки джоб</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
+                    Re-Peat е верига магазини за дрехи втора употреба с 3 локации в София. 
+                    Открийте качествени маркови дрехи на достъпни цени!
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#stores" class="btn-primary text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 text-lg shadow-xl">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        Намерете магазин
+                    </a>
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-medium flex items-center gap-2 text-lg">
+                        <i data-lucide="clock" class="w-5 h-5"></i>
+                        Работно време: 10:00 - 18:00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-red-100 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                        <i data-lucide="trending-down" class="w-8 h-8 text-red-600 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Падащи цени</h3>
+                    <p class="text-gray-600 leading-relaxed">Всяка седмица цените падат! Колкото по-дълго чакате, толкова по-евтино!</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-red-100 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                        <i data-lucide="sparkles" class="w-8 h-8 text-red-600 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Маркови находки</h3>
+                    <p class="text-gray-600 leading-relaxed">Открийте марки като Zara, H&M, Mango, Bershka и много други на невероятни цени</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg card-hover transition-all duration-300 text-center group">
+                    <div class="w-16 h-16 mx-auto mb-6 bg-red-100 rounded-2xl flex items-center justify-center group-hover:bg-red-600 transition-colors duration-300">
+                        <i data-lucide="heart" class="w-8 h-8 text-red-600 group-hover:text-white transition-colors duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Качествени дрехи</h3>
+                    <p class="text-gray-600 leading-relaxed">Всички дрехи са внимателно подбрани и проверени за качество</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-red-100 rounded-3xl rotate-3"></div>
+                    <div class="relative rounded-2xl shadow-2xl aspect-[4/3] overflow-hidden group">
+                        <img src="shops.webp" alt="Re-Peat Stores" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" width="900" height="600">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent flex items-end justify-center p-6">
+                            <div class="text-center text-white">
+                                <h3 class="text-2xl font-bold mb-2">Re-Peat</h3>
+                                <p class="text-gray-200">Маркови находки за всеки джоб</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:pl-8">
+                    <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">За нас</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                        Втори шанс за<br>
+                        <span class="text-red-600">страхотни дрехи</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Re-Peat е модерна верига магазини за дрехи втора употреба, която променя 
+                        представата за second hand пазаруване. Ние вярваме, че качествените дрехи 
+                        заслужават втори живот и всеки трябва да има достъп до стилни марки на достъпни цени.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                        С 3 удобни локации в София и иновативна система от падащи цени, 
+                        Re-Peat е идеалното място за тези, които търсят изгодни оферти 
+                        без да правят компромис с качеството.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gap-2 text-gray-700">
+                            <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                            <span>3 магазина в София</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-700">
+                            <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                            <span>Хиляди маркови дрехи</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-gray-700">
+                            <div class="w-2 h-2 bg-red-600 rounded-full"></div>
+                            <span>Падащи цени всяка седмица</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stores Section -->
+    <section id="stores" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">Магазини</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    3 удобни локации в София
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Посетете ни в един от нашите магазини. Работим всеки ден от 10:00 до 18:00 часа.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Store 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
+                        <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Магазин Център</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">ул. Екзарх Йосиф 10, София</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <a href="tel:+359889915579" class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <span class="text-gray-700">10:00 - 18:00</span>
+                            </div>
+                            <a href="https://maps.google.com/?q=Екзарх+Йосиф+10+София" target="_blank" class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
+                                <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                Виж на картата
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Store 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
+                        <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Магазин Поп Богомил</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">ул. Поп Богомил 52, София</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <a href="tel:+359889915579" class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <span class="text-gray-700">10:00 - 18:00</span>
+                            </div>
+                            <a href="https://maps.google.com/?q=Поп+Богомил+52+София" target="_blank" class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
+                                <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                Виж на картата
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Store 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
+                        <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
+                        <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Магазин Раковски</span>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                <span class="text-gray-700">ул. Г.С. Раковски 85, София</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <a href="tel:+359889915579" class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <span class="text-gray-700">10:00 - 18:00</span>
+                            </div>
+                            <a href="https://maps.google.com/?q=Г.С.+Раковски+85+София" target="_blank" class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
+                                <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                Виж на картата
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Working Hours Banner -->
+            <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white text-center shadow-xl">
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="clock" class="w-8 h-8"></i>
+                        <span class="text-2xl font-bold">Работно време</span>
+                    </div>
+                    <div class="hidden md:block w-px h-12 bg-white/30"></div>
+                    <div>
+                        <p class="text-xl font-semibold">Всеки ден: 10:00 - 18:00</p>
+                        <p class="text-red-200">Очакваме Ви!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">Продукти</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Какво ще намерите при нас?
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Богат избор от качествени дрехи за мъже и жени на невероятни цени
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Categories -->
+                <div class="space-y-6 order-2 lg:order-1">
+                    <!-- Category 1 -->
+                    <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
+                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="shirt" class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Дамски дрехи</h3>
+                            <p class="text-gray-600 text-sm">Роки, блузи, панталони, якета и палта от водещи марки</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
+                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="shirt" class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Мъжки дрехи</h3>
+                            <p class="text-gray-600 text-sm">Костюми, ризи, дънки, суичъри и ежедневни дрехи</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
+                        <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
+                            <i data-lucide="shopping-bag" class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Аксесоари</h3>
+                            <p class="text-gray-600 text-sm">Чанти, колани, шалове, шапки и бижута</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
+                    </div>
+
+                    <!-- Falling Prices Card -->
+                    <div class="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-6 text-white">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i data-lucide="trending-down" class="w-10 h-10"></i>
+                            <h3 class="text-xl font-bold">Падащи цени</h3>
+                        </div>
+                        <p class="text-red-100 mb-4 leading-relaxed">
+                            Нашата уникална система от падащи цени означава, че всяка седмица 
+                            цените се намаляват! Колкото по-дълго чакате, толкова по-евтино става.
+                        </p>
+                        <div class="flex flex-wrap items-center gap-2 text-sm font-semibold">
+                            <span class="bg-white/20 px-3 py-1 rounded-full">Седмица 1: -20%</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full">Седмица 2: -40%</span>
+                            <span class="bg-white/20 px-3 py-1 rounded-full">Седмица 3: -60%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="grid grid-cols-2 gap-4 order-1 lg:order-2">
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-br from-pink-100 to-rose-200 rounded-2xl shadow-lg aspect-square flex items-center justify-center overflow-hidden">
+                            <i data-lucide="shirt" class="w-20 h-20 text-rose-400"></i>
+                        </div>
+                        <div class="rounded-2xl shadow-lg aspect-[4/3] overflow-hidden">
+                            <img src="logo.webp" alt="Re-Peat Logo" class="w-full h-full object-cover" width="300" height="300">
+                        </div>
+                    </div>
+                    <div class="pt-8 space-y-4">
+                        <div class="rounded-2xl shadow-lg aspect-[4/3] overflow-hidden">
+                            <img src="wellcome.webp" alt="Re-Peat Welcome" class="w-full h-full object-cover" width="1200" height="600">
+                        </div>
+                        <div class="bg-gradient-to-br from-red-100 to-orange-100 rounded-2xl shadow-lg aspect-square flex items-center justify-center">
+                            <i data-lucide="sparkles" class="w-16 h-16 text-red-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">Контакти</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Свържете се с нас
+                </h2>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Имате въпроси? Последвайте ни в социалните мрежи или ни посетете в някой от магазините!
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <!-- Facebook -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover transition-all">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="facebook" class="w-8 h-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Facebook</h3>
+                    <p class="text-gray-600 text-sm mb-4">Последвайте ни за новини и промоции</p>
+                    <a href="https://www.facebook.com/repeatstores" target="_blank" class="block w-full text-center border-2 border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 py-2.5 rounded-lg font-medium transition-all" title="Посетете нашата Facebook страница">
+                        Последвай
+                    </a>
+                </div>
+
+                <!-- Instagram -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover transition-all">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+                        <i data-lucide="instagram" class="w-8 h-8 text-white"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Instagram</h3>
+                    <p class="text-gray-600 text-sm mb-4">Вижте нашите нови находки</p>
+                    <a href="#" class="block w-full text-center border-2 border-pink-200 text-pink-600 hover:bg-pink-600 hover:text-white hover:border-pink-600 py-2.5 rounded-lg font-medium transition-all">
+                        Последвай
+                    </a>
+                </div>
+
+                <!-- Phone -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg text-center card-hover transition-all">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <i data-lucide="phone" class="w-8 h-8 text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Телефон</h3>
+                    <p class="text-gray-600 text-sm mb-4">Обадете ни се</p>
+                    <a href="tel:+359889915579" class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
+                        +359 889 915 579
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-red-600 via-red-700 to-red-600 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 cta-pattern"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                Готови за шопинг?
+            </h2>
+            <p class="text-red-100 text-lg mb-8 max-w-2xl mx-auto">
+                Посетете ни в един от нашите 3 магазина в София и открийте маркови находки на невероятни цени!
+            </p>
+            <a href="#stores" class="inline-block bg-white text-red-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg shadow-xl transition-all">
+                <i data-lucide="map-pin" class="w-5 h-5 inline mr-2"></i>
+                Намерете магазин
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center font-bold">RP</div>
+                        <span class="text-2xl font-bold text-red-500">Re-Peat</span>
+                    </div>
+                    <p class="text-gray-400 mb-4 max-w-md leading-relaxed">
+                        Верига магазини за дрехи втора употреба с 3 локации в София. 
+                        Маркови находки за всеки джоб!
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/repeatstores" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors" title="Посетете нашата Facebook страница">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Бързи връзки</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-red-500 transition-colors">За нас</a></li>
+                        <li><a href="#stores" class="text-gray-400 hover:text-red-500 transition-colors">Магазини</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-red-500 transition-colors">Продукти</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-red-500 transition-colors">Контакти</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Работно време</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Понеделник - Петък</span>
+                            <span class="text-white">10:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Събота</span>
+                            <span class="text-white">10:00 - 18:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Неделя</span>
+                            <span class="text-white">10:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
+                <p>© 2024 Re-Peat. Всички права запазени.</p>
+                <p>Верига магазини за дрехи втора употреба | София, България</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
