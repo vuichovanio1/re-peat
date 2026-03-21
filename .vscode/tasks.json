@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Push to GitHub",
+			"type": "shell",
+			"command": "cd c:\\Users\\MacMic\\source\\repos\\re-peat && git init && git remote add origin https://github.com/vuichovanio1/re-peat.git 2>nul; git add . && git commit -m \"Re-Peat Website\" && git branch -M main && git push -u origin main"
+		}
+	]
+}
