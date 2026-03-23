@@ -62,7 +62,7 @@
                     "url": "https://re-peat.store/",
                     "logo": "https://re-peat.store/logo.webp",
                     "sameAs": [
-                        "https://www.facebook.com/repeatstores"
+                        "https://www.facebook.com/profile.php?id=61578995424344"
                     ]
                 },
                 {
@@ -245,8 +245,8 @@
     .z-50{z-index:50}.order-1{order:1}.order-2{order:2}.rotate-3{transform:rotate(3deg)}
     .mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mr-2{margin-right:.5rem}.mt-4{margin-top:1rem}.mt-14{margin-top:3.5rem}
     .block{display:block}.inline{display:inline}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}
-    .h-4{height:1rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-24{height:6rem}.h-48{height:12rem}.h-full{height:100%}.min-h-\[600px\]{min-height:600px}
-    .w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-10{width:2.5rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-auto{width:auto}.w-full{width:100%}.w-px{width:1px}
+    .h-0\.1{height:.025rem}.h-0\.2{height:.075rem}.h-0\.5{height:.125rem}.h-1\.5{height:.375rem}.h-3{height:.75rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-7{height:1.75rem}.h-8{height:2rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-24{height:6rem}.h-48{height:12rem}.h-full{height:100%}.min-h-\[600px\]{min-height:600px}
+    .w-0\.1{width:.025rem}.w-0\.2{width:.075rem}.w-0\.5{width:.125rem}.w-1\.5{width:.375rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-7{width:1.75rem}.w-8{width:2rem}.w-10{width:2.5rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-auto{width:auto}.w-full{width:100%}.w-px{width:1px}
     .max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-7xl{max-width:80rem}
     .flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}
     .grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}
@@ -306,6 +306,37 @@
         .mobile-call-cta {
             box-shadow: 0 10px 25px rgba(220, 38, 38, 0.35);
         }
+        .store-icon-xs {
+            width: 2px;
+            height: 2px;
+        }
+        .store-icon-map {
+            width: 3px;
+            height: 3px;
+        }
+        .store-icon-banner {
+            width: 3px;
+            height: 3px;
+        }
+        .lucide-icon {
+            max-width: 2rem;
+            max-height: 2rem;
+        }
+        .category-bg-wom1 {
+            background-image: url('wom1.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .category-bg-man {
+            background-image: url('man.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .category-bg-aks1 {
+            background-image: url('aks1.webp');
+            background-size: cover;
+            background-position: center;
+        }
         </style>
     </head>
     <body class="bg-white text-gray-900">
@@ -333,13 +364,25 @@
                         <a href="#contact"
                                     class="text-gray-600 hover:text-red-600 transition-colors font-medium">Контакт</a>
                     </div>
-                    <a href="https://www.facebook.com/repeatstores"
+                    <details class="md:hidden relative group">
+                        <summary class="list-none cursor-pointer border border-red-200 text-red-600 hover:bg-red-50 px-4 py-2 rounded-lg font-semibold transition-colors">
+                            Меню
+                        </summary>
+                        <div class="absolute right-0 top-14 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2">
+                            <a href="about.html" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">За нас</a>
+                            <a href="#stores" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">Магазини</a>
+                            <a href="#products" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">Продукти</a>
+                            <a href="blog/" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">Блог</a>
+                            <a href="#contact" class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-red-50 hover:text-red-600 transition-colors">Контакт</a>
+                        </div>
+                    </details>
+                          <a href="https://www.facebook.com/profile.php?id=61578995424344"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="btn-primary text-white px-5 py-2.5 rounded-lg font-medium flex items-center gap-2 shadow-lg"
+                       class="hidden sm:flex btn-primary text-white px-5 py-2.5 rounded-lg font-medium items-center gap-2 shadow-lg"
                        title="Посети нашата Facebook страница">
                         <i data-lucide="facebook" class="w-4 h-4"></i>
-                        <span class="hidden sm:inline">Последвай ни</span>
+                        <span>Facebook</span>
                     </a>
                 </div>
             </div>
@@ -376,6 +419,14 @@
                            class="btn-primary text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 text-lg shadow-xl">
                             <i data-lucide="map-pin" class="w-5 h-5"></i>
                             Виж магазините
+                        </a>
+                                <a href="https://www.facebook.com/profile.php?id=61578995424344"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="md:hidden bg-white/20 backdrop-blur-sm border border-white/40 text-white px-6 py-4 rounded-xl font-semibold flex items-center gap-2 text-lg"
+                           title="Последвай Re-Peat във Facebook">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                            Последвай ни
                         </a>
                         <div class="bg-white/10 backdrop-blur-sm border border-white/30 text-white px-8 py-4 rounded-xl font-medium flex items-center gap-2 text-lg">
                             <i data-lucide="clock" class="w-5 h-5"></i>
@@ -443,9 +494,9 @@
             </div>
         </section>
         <!-- Stores Section -->
-        <section id="stores" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <section id="stores" class="py-12 bg-gradient-to-b from-gray-50 to-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
+                <div class="text-center mb-8">
                     <span class="inline-block bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-semibold mb-4">Магазини</span>
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">3 удобни локации в София</h2>
                     <p class="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -461,38 +512,37 @@
                            class="inline-block border border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 px-4 py-2 rounded-full transition-all">Г. С. Раковски 85</a>
                     </div>
                 </div>
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="grid md:grid-cols-3 gap-4 mb-8">
                     <!-- Store 1 -->
                     <div id="store-exarch-yosif" class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
-                            <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
-                            <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Екзарх Йосиф</span>
+                        <div class="h-24 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center px-4">
+                            <span class="bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Екзарх Йосиф</span>
                         </div>
                         <div class="p-6">
-                            <div class="space-y-4">
-                                <div class="flex items-start gap-3">
-                                    <i data-lucide="map-pin"
-                                       class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
-                                    <span class="text-gray-700">ул. Екзарх Йосиф 10, София</span>
+                            <div class="space-y-2">
+                                <div class="flex items-start gap-2">
+                                                <i data-lucide="map-pin"
+                                                    class="w-0.5 h-0.5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">ул. Екзарх Йосиф 10, София</span>
                                 </div>
-                                <p class="text-gray-600 text-sm leading-relaxed">
+                                <p class="text-gray-600 text-sm leading-tight">
                                     Магазин в централната част на града с богата селекция за жени и мъже,
                                     маркирани находки и намаляващи цени.
                                 </p>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="phone" class="store-icon-xs text-red-600 flex-shrink-0"></i>
                                     <a href="tel:+359889915579"
-                                       class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                                       class="text-gray-700 text-sm hover:text-red-600 transition-colors">+359 889 915 579</a>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
-                                    <span class="text-gray-700">10:00 - 18:00</span>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="store-icon-xs text-red-600 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">10:00 - 18:00</span>
                                 </div>
                                 <a href="https://maps.google.com/?q=Ekzarh+Yosif+10+Sofia"
                                    target="_blank"
                                    rel="noopener noreferrer"
-                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
-                                    <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2 rounded-lg text-sm font-medium transition-all">
+                                    <i data-lucide="map-pin" class="store-icon-map inline mr-2"></i>
                                     Виж в Maps
                                 </a>
                             </div>
@@ -500,35 +550,34 @@
                     </div>
                     <!-- Store 2 -->
                     <div id="store-pop-bogomil" class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
-                            <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
-                            <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Поп Богомил</span>
+                        <div class="h-24 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center px-4">
+                            <span class="bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Поп Богомил</span>
                         </div>
                         <div class="p-6">
-                            <div class="space-y-4">
-                                <div class="flex items-start gap-3">
-                                    <i data-lucide="map-pin"
-                                       class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
-                                    <span class="text-gray-700">ул. Поп Богомил 52, София</span>
+                            <div class="space-y-2">
+                                <div class="flex items-start gap-2">
+                                                <i data-lucide="map-pin"
+                                                    class="w-0.5 h-0.5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">ул. Поп Богомил 52, София</span>
                                 </div>
-                                <p class="text-gray-600 text-sm leading-relaxed">
+                                <p class="text-gray-600 text-sm leading-tight">
                                     Пространство с разнообразни модели за ежедневие и повод.
                                     Подбрани предложения, маркови модели и сезонни попадения.
                                 </p>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="phone" class="store-icon-xs text-red-600 flex-shrink-0"></i>
                                     <a href="tel:+359889915579"
-                                       class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                                       class="text-gray-700 text-sm hover:text-red-600 transition-colors">+359 889 915 579</a>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
-                                    <span class="text-gray-700">10:00 - 18:00</span>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="store-icon-xs text-red-600 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">10:00 - 18:00</span>
                                 </div>
                                 <a href="https://maps.google.com/?q=Pop+Bogomil+52+Sofia"
                                    target="_blank"
                                    rel="noopener noreferrer"
-                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
-                                    <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2 rounded-lg text-sm font-medium transition-all">
+                                    <i data-lucide="map-pin" class="store-icon-map inline mr-2"></i>
                                     Виж в Maps
                                 </a>
                             </div>
@@ -536,35 +585,34 @@
                     </div>
                     <!-- Store 3 -->
                     <div id="store-rakovski" class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover transition-all duration-300 group">
-                        <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center justify-center">
-                            <i data-lucide="map-pin" class="w-16 h-16 text-white/80"></i>
-                            <span class="absolute top-4 left-4 bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Г. С. Раковски</span>
+                        <div class="h-24 bg-gradient-to-br from-red-500 to-red-700 relative flex items-center px-4">
+                            <span class="bg-white text-red-600 px-3 py-1 rounded-full font-bold text-sm">Г. С. Раковски</span>
                         </div>
                         <div class="p-6">
-                            <div class="space-y-4">
-                                <div class="flex items-start gap-3">
-                                    <i data-lucide="map-pin"
-                                       class="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0"></i>
-                                    <span class="text-gray-700">ул. Г. С. Раковски 85, София</span>
+                            <div class="space-y-2">
+                                <div class="flex items-start gap-2">
+                                                <i data-lucide="map-pin"
+                                                    class="w-0.5 h-0.5 text-red-600 mt-0.5 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">ул. Г. С. Раковски 85, София</span>
                                 </div>
-                                <p class="text-gray-600 text-sm leading-relaxed">
+                                <p class="text-gray-600 text-sm leading-tight">
                                     Отлична локация с нови доставки всяка седмица и силни предложения
                                     за жени, мъже и аксесоари.
                                 </p>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="phone" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="phone" class="store-icon-xs text-red-600 flex-shrink-0"></i>
                                     <a href="tel:+359889915579"
-                                       class="text-gray-700 hover:text-red-600 transition-colors">+359 889 915 579</a>
+                                       class="text-gray-700 text-sm hover:text-red-600 transition-colors">+359 889 915 579</a>
                                 </div>
-                                <div class="flex items-center gap-3">
-                                    <i data-lucide="clock" class="w-5 h-5 text-red-600 flex-shrink-0"></i>
-                                    <span class="text-gray-700">10:00 - 18:00</span>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="clock" class="store-icon-xs text-red-600 flex-shrink-0"></i>
+                                    <span class="text-gray-700 text-sm">10:00 - 18:00</span>
                                 </div>
                                 <a href="https://maps.google.com/?q=G.S.+Rakovski+85+Sofia"
                                    target="_blank"
                                    rel="noopener noreferrer"
-                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2.5 rounded-lg font-medium transition-all">
-                                    <i data-lucide="map-pin" class="w-4 h-4 inline mr-2"></i>
+                                   class="block w-full text-center border-2 border-red-200 text-red-600 hover:bg-red-600 hover:text-white hover:border-red-600 py-2 rounded-lg text-sm font-medium transition-all">
+                                    <i data-lucide="map-pin" class="store-icon-map inline mr-2"></i>
                                     Виж в Maps
                                 </a>
                             </div>
@@ -575,7 +623,7 @@
                 <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white text-center shadow-xl">
                     <div class="flex flex-col md:flex-row items-center justify-center gap-6">
                         <div class="flex items-center gap-3">
-                            <i data-lucide="clock" class="w-8 h-8"></i>
+                            <i data-lucide="clock" class="store-icon-banner"></i>
                             <span class="text-2xl font-bold">Работно време</span>
                         </div>
                         <div class="hidden md:block w-px h-12 bg-white/30"></div>
@@ -601,43 +649,40 @@
                     <!-- Categories -->
                     <div class="space-y-6 order-2 lg:order-1">
                         <!-- Category 1 -->
-                        <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
-                            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
-                                <i data-lucide="shirt"
-                                   class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        <div class="bg-gray-50 rounded-xl overflow-hidden flex items-stretch gap-6 hover:bg-red-50 transition-colors cursor-pointer group h-40 md:h-32" onclick="window.open('wom1.webp', '_blank')">
+                            <div class="w-40 h-40 md:w-32 md:h-32 flex-shrink-0 rounded-xl shadow-sm overflow-hidden relative group bg-white category-bg-wom1">
+                                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                                    <i data-lucide="search" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 p-4 flex flex-col justify-center">
                                 <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Дамски дрехи</h3>
                                 <p class="text-gray-600 text-sm">Рокли, поли, сака и топ модели за ежедневен стил</p>
                             </div>
-                            <i data-lucide="chevron-right"
-                               class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
                         </div>
                         <!-- Category 2 -->
-                        <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
-                            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
-                                <i data-lucide="shirt"
-                                   class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        <div class="bg-gray-50 rounded-xl overflow-hidden flex items-stretch gap-6 hover:bg-red-50 transition-colors cursor-pointer group h-40 md:h-32" onclick="window.open('man.webp', '_blank')">
+                            <div class="w-40 h-40 md:w-32 md:h-32 flex-shrink-0 rounded-xl shadow-sm overflow-hidden relative group bg-white category-bg-man">
+                                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                                    <i data-lucide="search" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 p-4 flex flex-col justify-center">
                                 <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Мъжки дрехи</h3>
                                 <p class="text-gray-600 text-sm">Ризи, дънки, якета, пуловери и практични модели за всеки ден</p>
                             </div>
-                            <i data-lucide="chevron-right"
-                               class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
                         </div>
                         <!-- Category 3 -->
-                        <div class="bg-gray-50 rounded-xl p-6 flex items-center gap-6 hover:bg-red-50 transition-colors cursor-pointer group">
-                            <div class="w-14 h-14 bg-white rounded-xl flex items-center justify-center shadow-sm group-hover:bg-red-600 transition-colors">
-                                <i data-lucide="shopping-bag"
-                                   class="w-7 h-7 text-red-600 group-hover:text-white transition-colors"></i>
+                        <div class="bg-gray-50 rounded-xl overflow-hidden flex items-stretch gap-6 hover:bg-red-50 transition-colors cursor-pointer group h-40 md:h-32" onclick="window.open('aks1.webp', '_blank')">
+                            <div class="w-40 h-40 md:w-32 md:h-32 flex-shrink-0 rounded-xl shadow-sm overflow-hidden relative group bg-white category-bg-aks1">
+                                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                                    <i data-lucide="search" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                                </div>
                             </div>
-                            <div class="flex-1">
+                            <div class="flex-1 p-4 flex flex-col justify-center">
                                 <h3 class="text-lg font-bold text-gray-900 group-hover:text-red-600 transition-colors">Обувки и аксесоари</h3>
                                 <p class="text-gray-600 text-sm">Дамски чанти, спортни артикули и допълнения към всеки аутфит</p>
                             </div>
-                            <i data-lucide="chevron-right"
-                               class="w-5 h-5 text-gray-400 group-hover:text-red-600 transition-colors"></i>
                         </div>
                         <!-- Falling Prices Card -->
                         <div class="bg-gradient-to-br from-red-600 to-red-700 rounded-2xl p-6 text-white">
@@ -831,7 +876,7 @@
                         </div>
                         <h3 class="text-lg font-bold text-gray-900 mb-2">Facebook</h3>
                         <p class="text-gray-600 text-sm mb-4">Последвай ни за нови доставки</p>
-                        <a href="https://www.facebook.com/repeatstores"
+                                <a href="https://www.facebook.com/profile.php?id=61578995424344"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="block w-full text-center border-2 border-blue-200 text-blue-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 py-2.5 rounded-lg font-medium transition-all"
@@ -884,7 +929,7 @@
                             Нови селектирани находки, падащи цени и устойчив подход към модата.
                         </p>
                         <div class="flex gap-4">
-                            <a href="https://www.facebook.com/repeatstores"
+                                     <a href="https://www.facebook.com/profile.php?id=61578995424344"
                                target="_blank"
                                rel="noopener noreferrer"
                                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
@@ -939,12 +984,20 @@
                 <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400 text-sm">
                     <p>© 2026 Re-Peat. Всички права запазени.</p>
                     <p>Магазин за дрехи втора употреба | София, България</p>
+                    <p>
+                        Уеб изработка:
+                        <a href="https://moverstudio.online" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:text-red-400 transition-colors">Mover Studio</a>
+                    </p>
                 </div>
             </div>
         </footer>
-        <a href="tel:+359889915579"
-           class="mobile-call-cta fixed bottom-4 right-4 z-50 md:hidden bg-red-600 text-white px-5 py-3 rounded-full font-semibold">
-            Обади се
+        <a href="https://www.facebook.com/profile.php?id=61578995424344"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Последвай Re-Peat във Facebook"
+           class="mobile-call-cta fixed bottom-4 right-4 z-50 md:hidden bg-red-600 text-white px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap flex items-center gap-2">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
+            Последвай ни във Facebook
         </a>
         <script>
         // Local icon renderer keeps the project dependency-free.
@@ -974,6 +1027,7 @@
                 svg.setAttribute('aria-hidden', 'true');
                 svg.setAttribute('focusable', 'false');
                 svg.className = el.className;
+                svg.classList.add('lucide-icon');
                 svg.innerHTML = icons[name] || '<circle cx="12" cy="12" r="9"></circle>';
                 el.replaceWith(svg);
             });
